@@ -1,0 +1,84 @@
+/* Chat Header Styles */
+.chat-header .follower {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-header .follower .followerImage {
+    border-radius: 50%;
+  }
+  
+  .chat-header .follower .name {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Chat Sender Styles */
+  .chat-sender {
+    background: var(--cardColor);
+    border-top: 1px solid #ececec;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .chat-sender>div.send-button {
+    background: var(--buttonBg);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-sender>div.send-button:hover {
+    background-color: #358ff9;
+  }
+  
+  /* Adjustments for Input and Button alignment */
+  .chat-sender>input, .chat-sender>div {
+    align-self: center;
+  }
+  
+  /* Emoji Input Styles */
+  .chat-sender .emoji-picker-react {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  /* Scrollbar Styles for Chat Body */
+  .chat-body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .chat-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .chat-body::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  .chat-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .ChatBox-container {
+      grid-template-rows: 10vh 75vh 15vh;
+    }
+  
+    .chat-header, .chat-body, .chat-sender {
+      padding: 0.5rem;
+    }
+  
+    .chat-sender>div.send-button {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+  }
+  
